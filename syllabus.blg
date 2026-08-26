@@ -1,0 +1,9 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'syllabus.blg'
+[29] biber-darwin:315> INFO - === Tue Aug 25, 2026, 00:42:43
+[47] Biber.pm:371> INFO - Reading 'syllabus.bcf'
+[111] Biber.pm:889> INFO - Found 0 citekeys in bib section 0
+[115] Utils.pm:193> WARN - The file 'syllabus.bcf' does not contain any citations!
+[120] bbl.pm:636> INFO - Writing 'syllabus.bbl' with encoding 'UTF-8'
+[121] bbl.pm:739> INFO - Output to syllabus.bbl
+[121] Biber.pm:110> INFO - WARNINGS: 1

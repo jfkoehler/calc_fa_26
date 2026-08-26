@@ -1,0 +1,12 @@
+PWD /Users/jacobkoehler/Desktop/fall_26
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/jacobkoehler/Desktop/fall_26/student-brief.tex
+OUTPUT /Users/jacobkoehler/Desktop/fall_26/student-brief.log
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size11.clo
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size11.clo
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
