@@ -1,0 +1,717 @@
+\documentclass[11pt]{article}
+
+\usepackage{../langcalc}
+\usepackage{tikz}
+
+\begin{document}
+
+\courseheader
+  {Day 02}
+  {When Does a Sum Become an Area?}
+  {LMTH 2040 --- Calculus: A Multidisciplinary Approach}
+  {Monday, August 31, 2026}
+
+\begin{keyidea}
+Today we will begin with a pattern you already know and ask what happens
+when we change its scale.
+
+Our path will be
+
+\[
+\text{pattern}
+\longrightarrow
+\text{sum}
+\longrightarrow
+\text{picture}
+\longrightarrow
+\text{computation}
+\longrightarrow
+\text{area}.
+\]
+
+The central question is:
+
+\begin{center}
+\Large\bfseries
+When does a sum become an area?
+\end{center}
+\end{keyidea}
+
+
+% =========================================================
+\section{1. Triangular Numbers Revisited}
+% =========================================================
+
+Recall the triangular numbers
+
+\[
+T_n = 1+2+3+\cdots+n.
+\]
+
+For example,
+
+\[
+T_1=1,
+\qquad
+T_2=3,
+\qquad
+T_3=6,
+\qquad
+T_4=10.
+\]
+
+\subsection*{Compare}
+
+With your group, compare your solutions to the triangular-number
+problem from Homework 01.
+
+Identify at least two different ways of representing or determining
+\(T_n\).
+
+\vspace{0.15in}
+
+\textbf{Representation 1:}
+
+\vspace{0.65in}
+
+\textbf{Representation 2:}
+
+\vspace{0.65in}
+
+
+\subsection*{What does each representation reveal?}
+
+Complete the table.
+
+\begin{center}
+\begin{tabularx}{0.95\textwidth}{@{}p{0.24\textwidth}XX@{}}
+\toprule
+& \textbf{What is easy to see?}
+& \textbf{What is difficult to see?}
+\\
+\midrule
+
+Picture / diagram
+&
+\vspace{0.42in}
+&
+\\
+\midrule
+
+Sum
+&
+\vspace{0.42in}
+&
+\\
+\midrule
+
+Formula
+&
+\vspace{0.42in}
+&
+\\
+\midrule
+
+Computation
+&
+\vspace{0.42in}
+&
+\\
+
+\bottomrule
+\end{tabularx}
+\end{center}
+
+
+\begin{reflection}
+A numerical pattern can provide \emph{evidence} for a conjecture.
+A mathematical argument explains why the conjecture must continue
+to hold.
+
+Where does this distinction appear in your solution to the triangular
+number problem?
+\end{reflection}
+
+\vspace{0.55in}
+
+
+% =========================================================
+\section{2. Changing the Scale}
+% =========================================================
+
+Suppose we place the \(n\)th triangular number inside an
+\(n\times n\) square.
+
+The square contains \(n^2\) unit squares.
+
+The triangle contains \(T_n\) objects.
+
+So consider the ratio
+
+\[
+A_n=\frac{T_n}{n^2}.
+\]
+
+
+\subsection*{Calculate}
+
+Without using the general formula for \(T_n\), calculate:
+
+\[
+\begin{array}{c|c|c}
+n & T_n & A_n=T_n/n^2\\
+\hline
+1 & &\\[0.12in]
+2 & &\\[0.12in]
+3 & &\\[0.12in]
+4 & &\\[0.12in]
+5 & &\\[0.12in]
+10 & &
+\end{array}
+\]
+
+
+\subsection*{Conjecture}
+
+What appears to happen to \(A_n\) as \(n\) becomes large?
+
+\vspace{0.55in}
+
+
+\subsection*{Use the formula}
+
+Now use
+
+\[
+T_n=\frac{n(n+1)}{2}
+\]
+
+to simplify
+
+\[
+A_n=\frac{T_n}{n^2}.
+\]
+
+\vspace{0.65in}
+
+What does your expression suggest happens as \(n\) becomes very large?
+
+\vspace{0.5in}
+
+
+\begin{reflection}
+We have changed the question.
+
+Instead of asking how large \(T_n\) becomes, we are asking how large it
+is \emph{relative to the square containing it}.
+
+Why might changing the scale reveal a pattern that is difficult to see
+in the original numbers?
+\end{reflection}
+
+
+% =========================================================
+\newpage
+\section{3. Turn the Sum into a Picture}
+% =========================================================
+
+Start again with
+
+\[
+A_n
+=
+\frac{T_n}{n^2}
+=
+\frac{1}{n^2}
+\left(
+1+2+\cdots+n
+\right).
+\]
+
+Rewrite this expression by distributing the two factors of \(n\):
+
+\[
+A_n
+=
+\frac1n
+\left(
+\frac1n
++
+\frac2n
++
+\frac3n
++
+\cdots
++
+\frac nn
+\right).
+\]
+
+
+\subsection*{A geometric interpretation}
+
+Consider a square with side length \(1\).
+
+Divide the horizontal axis into \(n\) equal pieces.
+
+Each piece therefore has width
+
+\[
+\boxed{\phantom{\frac{1}{n}}}.
+\]
+
+Now interpret
+
+\[
+\frac1n,\quad
+\frac2n,\quad
+\frac3n,\quad
+\ldots,\quad
+\frac nn
+\]
+
+as heights.
+
+
+\begin{center}
+\begin{tikzpicture}[scale=6]
+
+    % axes
+    \draw[->] (0,0) -- (1.08,0) node[right] {$x$};
+    \draw[->] (0,0) -- (0,1.08) node[above] {$y$};
+
+    % unit square guides
+    \draw[dashed] (1,0) -- (1,1);
+    \draw[dashed] (0,1) -- (1,1);
+
+    % labels
+    \node[below] at (1,0) {$1$};
+    \node[left] at (0,1) {$1$};
+
+\end{tikzpicture}
+\end{center}
+
+
+For \(n=4\), draw four rectangles with width \(1/4\) and heights
+
+\[
+\frac14,\qquad
+\frac24,\qquad
+\frac34,\qquad
+\frac44.
+\]
+
+
+\subsection*{Area}
+
+What is the area of the first rectangle?
+
+\[
+\text{area}
+=
+\boxed{\phantom{\frac14}}
+\cdot
+\boxed{\phantom{\frac14}}
+=
+\boxed{\phantom{\frac1{16}}}
+\]
+
+What is the area of the second?
+
+\[
+\text{area}
+=
+\boxed{\phantom{\frac14}}
+\cdot
+\boxed{\phantom{\frac24}}
+=
+\boxed{\phantom{\frac2{16}}}
+\]
+
+What is the total area of all four rectangles?
+
+\vspace{0.45in}
+
+How is this related to \(T_4/4^2\)?
+
+\vspace{0.45in}
+
+
+% =========================================================
+\section{4. Refine the Picture}
+% =========================================================
+
+Draw the same construction for \(n=8\).
+
+\begin{center}
+\begin{tikzpicture}[scale=6]
+
+    \draw[->] (0,0) -- (1.08,0) node[right] {$x$};
+    \draw[->] (0,0) -- (0,1.08) node[above] {$y$};
+
+    \draw[dashed] (1,0) -- (1,1);
+    \draw[dashed] (0,1) -- (1,1);
+
+    \foreach \x in {0.125,0.25,0.375,0.5,0.625,0.75,0.875}
+        \draw[very thin] (\x,0) -- (\x,0.025);
+
+    \node[below] at (1,0) {$1$};
+    \node[left] at (0,1) {$1$};
+
+\end{tikzpicture}
+\end{center}
+
+
+What changes when we move from \(n=4\) to \(n=8\)?
+
+\vspace{0.45in}
+
+What stays the same?
+
+\vspace{0.45in}
+
+What do you expect the picture to look like for \(n=100\)?
+
+\vspace{0.45in}
+
+
+\begin{problem}
+Imagine continuing this process:
+
+\[
+n=4,\qquad
+n=8,\qquad
+n=100,\qquad
+n=1000,\qquad
+\ldots
+\]
+
+What geometric object appears to emerge from the rectangles?
+
+Draw it on one of the diagrams above.
+\end{problem}
+
+
+% =========================================================
+\newpage
+\section{5. Let the Spreadsheet Do the Repetition}
+% =========================================================
+
+Open the starter spreadsheet.
+
+The first column contains values of \(n\). Your task is to make the
+spreadsheet investigate the triangular numbers.
+
+
+\subsection*{Method A: Build the sequence}
+
+Triangular numbers satisfy
+
+\[
+T_n=T_{n-1}+n.
+\]
+
+Use this relationship to construct the sequence in the spreadsheet.
+
+What formula did you enter?
+
+\vspace{0.35in}
+
+What information does the spreadsheet need in order to begin this
+process?
+
+\vspace{0.35in}
+
+
+\subsection*{Method B: Calculate directly}
+
+We also know
+
+\[
+T_n=\frac{n(n+1)}2.
+\]
+
+Use this formula in a new column.
+
+Do the two methods produce the same values?
+
+\[
+\boxed{\text{Yes}}
+\qquad
+\boxed{\text{No}}
+\]
+
+If they agree, does that prove that the formula is correct for every
+positive integer \(n\)? Explain.
+
+\vspace{0.6in}
+
+
+\subsection*{Normalize}
+
+Create another column containing
+
+\[
+A_n=\frac{T_n}{n^2}.
+\]
+
+Investigate at least
+
+\[
+n=10,\qquad
+100,\qquad
+1000.
+\]
+
+Record your results.
+
+\[
+\begin{array}{c|c}
+n&A_n\\
+\hline
+10&\\[0.15in]
+100&\\[0.15in]
+1000&
+\end{array}
+\]
+
+
+What value does the spreadsheet suggest \(A_n\) is approaching?
+
+\vspace{0.35in}
+
+How confident are you?
+
+\vspace{0.35in}
+
+What evidence would make you more confident?
+
+\vspace{0.4in}
+
+
+\begin{reflection}
+The spreadsheet can calculate thousands of examples very quickly.
+
+What can the spreadsheet tell us?
+
+\vspace{0.25in}
+
+What can it \emph{not} tell us by calculation alone?
+\end{reflection}
+
+
+% =========================================================
+\section{6. A New Notation}
+% =========================================================
+
+Instead of writing
+
+\[
+1+2+3+\cdots+n,
+\]
+
+mathematicians often write
+
+\[
+\sum_{k=1}^{n} k.
+\]
+
+The symbol
+
+\[
+\sum
+\]
+
+means that we are adding a collection of terms.
+
+So
+
+\[
+T_n
+=
+\sum_{k=1}^{n}k.
+\]
+
+
+Rewrite each expression using sigma notation.
+
+\[
+1+2+3+\cdots+100
+\]
+
+\vspace{0.25in}
+
+\[
+1^2+2^2+3^2+\cdots+n^2
+\]
+
+\vspace{0.25in}
+
+\[
+\frac1n+\frac2n+\frac3n+\cdots+\frac nn
+\]
+
+\vspace{0.35in}
+
+
+Now return to our rectangle construction.
+
+Each rectangle has width \(1/n\), while its height is \(k/n\).
+
+Its area is therefore
+
+\[
+\frac{k}{n}\frac1n.
+\]
+
+The total area of all the rectangles is
+
+\[
+\boxed{
+\sum_{k=1}^{n}
+\frac{k}{n}\frac1n
+}.
+\]
+
+
+% =========================================================
+\newpage
+\section{7. When Does a Sum Become an Area?}
+% =========================================================
+
+The top edges of our rectangles approach the line
+
+\[
+y=x.
+\]
+
+Draw the line \(y=x\) and several rectangles below.
+
+\begin{center}
+\begin{tikzpicture}[scale=7]
+
+    \draw[->] (0,0) -- (1.08,0) node[right] {$x$};
+    \draw[->] (0,0) -- (0,1.08) node[above] {$y$};
+
+    \draw[dashed] (1,0) -- (1,1);
+    \draw[dashed] (0,1) -- (1,1);
+
+    \node[below] at (1,0) {$1$};
+    \node[left] at (0,1) {$1$};
+
+\end{tikzpicture}
+\end{center}
+
+
+As \(n\) becomes larger:
+
+\begin{itemize}[leftmargin=*]
+
+\item the rectangles become \rule{1.2in}{0.4pt};
+
+\item the number of rectangles becomes \rule{1.2in}{0.4pt};
+
+\item their total area appears to approach \rule{1.2in}{0.4pt}.
+
+\end{itemize}
+
+
+We can describe the process symbolically as
+
+\[
+\lim_{n\to\infty}
+\sum_{k=1}^{n}
+\frac{k}{n}\frac1n
+=
+\frac12.
+\]
+
+
+\begin{keyidea}
+The expression on the left is a sequence of \emph{finite sums}.
+
+Every individual calculation uses only finitely many rectangles.
+
+Yet the limiting process appears to determine an exact area:
+
+\[
+\boxed{\frac12}.
+\]
+
+How can an infinite process produce an exact finite quantity?
+\end{keyidea}
+
+
+\subsection*{One more piece of notation}
+
+Modern calculus gives the limiting area another name:
+
+\[
+\boxed{
+\int_0^1 x\,dx=\frac12
+}
+\]
+
+For now, do not worry about calculating integrals using rules or
+formulas.
+
+Instead, read the symbol as a question:
+
+\begin{center}
+\large
+\emph{What quantity is produced when increasingly fine pieces
+are accumulated?}
+\end{center}
+
+
+% =========================================================
+\section{8. Looking Back / Looking Forward}
+% =========================================================
+
+Return to today's path:
+
+\[
+\text{pattern}
+\longrightarrow
+\text{sum}
+\longrightarrow
+\text{picture}
+\longrightarrow
+\text{computation}
+\longrightarrow
+\text{area}.
+\]
+
+Choose one transition in this chain.
+
+What new idea became visible when we changed representations?
+
+\vspace{0.65in}
+
+
+\begin{historicalnote}
+Today we used algebraic formulas, decimal calculations, sigma notation,
+a spreadsheet, and the modern language of limits to investigate an area.
+
+But the problem is much older than any of these tools.
+
+On Wednesday we will ask how Archimedes could establish exact results
+about curved figures using only geometry, finite constructions, and
+carefully controlled approximation.
+\end{historicalnote}
+
+
+\subsection*{Exit Question}
+
+Suppose someone says:
+
+\begin{quote}
+``A computer can calculate this sum for an enormous value of \(n\),
+so we do not need the limit.''
+\end{quote}
+
+What would you say in response?
+
+\vspace{0.8in}
+
+\end{document}

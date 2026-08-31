@@ -1,9 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'syllabus.blg'
-[29] biber-darwin:315> INFO - === Tue Aug 25, 2026, 00:42:43
-[47] Biber.pm:371> INFO - Reading 'syllabus.bcf'
-[111] Biber.pm:889> INFO - Found 0 citekeys in bib section 0
-[115] Utils.pm:193> WARN - The file 'syllabus.bcf' does not contain any citations!
-[120] bbl.pm:636> INFO - Writing 'syllabus.bbl' with encoding 'UTF-8'
-[121] bbl.pm:739> INFO - Output to syllabus.bbl
-[121] Biber.pm:110> INFO - WARNINGS: 1
+[28] biber-darwin:315> INFO - === Sun Aug 30, 2026, 21:09:39
+[48] Biber.pm:371> INFO - Reading 'syllabus.bcf'
+[111] Biber.pm:889> INFO - Found 8 citekeys in bib section 0
+[121] Biber.pm:4093> INFO - Processing section 0
+[131] Biber.pm:4254> INFO - Looking for bibtex format file 'references.bib' for section 0
+[132] bibtex.pm:1523> INFO - LaTeX decoding ...
+[136] bibtex.pm:1340> INFO - Found BibTeX data source 'references.bib'
+[150] Utils.pm:193> WARN - I didn't find a database entry for 'toeplitz1963' (section 0)
+[150] Utils.pm:193> WARN - I didn't find a database entry for 'struik1986' (section 0)
+[150] Utils.pm:193> WARN - I didn't find a database entry for 'deleuzeguattari1987' (section 0)
+[160] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[160] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[160] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[160] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[163] bbl.pm:636> INFO - Writing 'syllabus.bbl' with encoding 'UTF-8'
+[166] bbl.pm:739> INFO - Output to syllabus.bbl
+[166] Biber.pm:110> INFO - WARNINGS: 3

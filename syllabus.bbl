@@ -16,5 +16,160 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{bowkerstar1999}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=204a44c003f4e5a76406da3423eeedec}{%
+           family={Bowker},
+           familyi={B\bibinitperiod},
+           given={Geoffrey\bibnamedelima C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=07b9d5352ccd3653aa9637be5175f31a}{%
+           family={Star},
+           familyi={S\bibinitperiod},
+           given={Susan\bibnamedelima Leigh},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{3e465dd5a74e4cd9fcd58edd7b2baec1}
+      \strng{fullhash}{3e465dd5a74e4cd9fcd58edd7b2baec1}
+      \strng{bibnamehash}{3e465dd5a74e4cd9fcd58edd7b2baec1}
+      \strng{authorbibnamehash}{3e465dd5a74e4cd9fcd58edd7b2baec1}
+      \strng{authornamehash}{3e465dd5a74e4cd9fcd58edd7b2baec1}
+      \strng{authorfullhash}{3e465dd5a74e4cd9fcd58edd7b2baec1}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sorting Things Out}
+      \field{year}{1999}
+    \endentry
+    \entry{crawford2021}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=04ddd15bdbd9d7c4572af614218b9b79}{%
+           family={Crawford},
+           familyi={C\bibinitperiod},
+           given={Kate},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Yale University Press}%
+      }
+      \strng{namehash}{04ddd15bdbd9d7c4572af614218b9b79}
+      \strng{fullhash}{04ddd15bdbd9d7c4572af614218b9b79}
+      \strng{bibnamehash}{04ddd15bdbd9d7c4572af614218b9b79}
+      \strng{authorbibnamehash}{04ddd15bdbd9d7c4572af614218b9b79}
+      \strng{authornamehash}{04ddd15bdbd9d7c4572af614218b9b79}
+      \strng{authorfullhash}{04ddd15bdbd9d7c4572af614218b9b79}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Atlas of AI}
+      \field{year}{2021}
+    \endentry
+    \entry{dastongalison2007}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=6d4c22c16a7493c36195465d33553957}{%
+           family={Daston},
+           familyi={D\bibinitperiod},
+           given={Lorraine},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a3312b1d9095719c76f76490a04d24ea}{%
+           family={Galison},
+           familyi={G\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Zone Books}%
+      }
+      \strng{namehash}{a882de9bfe8c44939e003368c8555e4c}
+      \strng{fullhash}{a882de9bfe8c44939e003368c8555e4c}
+      \strng{bibnamehash}{a882de9bfe8c44939e003368c8555e4c}
+      \strng{authorbibnamehash}{a882de9bfe8c44939e003368c8555e4c}
+      \strng{authornamehash}{a882de9bfe8c44939e003368c8555e4c}
+      \strng{authorfullhash}{a882de9bfe8c44939e003368c8555e4c}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Objectivity}
+      \field{year}{2007}
+    \endentry
+    \entry{porter1995}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d09ffd428654559fbbe355ac6424c3cc}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Theodore\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{d09ffd428654559fbbe355ac6424c3cc}
+      \strng{fullhash}{d09ffd428654559fbbe355ac6424c3cc}
+      \strng{bibnamehash}{d09ffd428654559fbbe355ac6424c3cc}
+      \strng{authorbibnamehash}{d09ffd428654559fbbe355ac6424c3cc}
+      \strng{authornamehash}{d09ffd428654559fbbe355ac6424c3cc}
+      \strng{authorfullhash}{d09ffd428654559fbbe355ac6424c3cc}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Trust in Numbers}
+      \field{year}{1995}
+    \endentry
+    \entry{wiener1950}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=4c57f398a86ab1994e9bd661e786e707}{%
+           family={Wiener},
+           familyi={W\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Houghton Mifflin}%
+      }
+      \strng{namehash}{4c57f398a86ab1994e9bd661e786e707}
+      \strng{fullhash}{4c57f398a86ab1994e9bd661e786e707}
+      \strng{bibnamehash}{4c57f398a86ab1994e9bd661e786e707}
+      \strng{authorbibnamehash}{4c57f398a86ab1994e9bd661e786e707}
+      \strng{authornamehash}{4c57f398a86ab1994e9bd661e786e707}
+      \strng{authorfullhash}{4c57f398a86ab1994e9bd661e786e707}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Human Use of Human Beings}
+      \field{year}{1950}
+    \endentry
+  \enddatalist
+  \missing{deleuzeguattari1987}
+  \missing{struik1986}
+  \missing{toeplitz1963}
+\endrefsection
 \endinput
 

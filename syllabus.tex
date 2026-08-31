@@ -1,9 +1,12 @@
 \documentclass[11pt]{article}
 
-
 \usepackage{langcalc}
+
 \addbibresource{references.bib}
 
+% =========================================================
+% Course Information
+% =========================================================
 
 \newcommand{\CourseSection}{TBD}
 \newcommand{\CourseCRN}{TBD}
@@ -23,82 +26,494 @@
   {Fall 2026 \textbullet{} Mondays \& Wednesdays
    \textbullet{} 12:00--1:40 PM
    \textbullet{} \CourseRoom}
+
+
+% =========================================================
 \section{Course Description}
-Calculus is a way of reasoning about accumulation, change, dynamics, and form. This course follows the historical and conceptual development of these ideas from problems of quadrature and motion to differential equations, high-dimensional optimization, and contemporary artificial intelligence. Mathematics is studied alongside computation in Jupyter, visual culture, modeling, history and sociology of science, and critical studies of data and AI.
+% =========================================================
 
-Rather than treating history or culture as decoration around a fixed mathematical sequence, the course uses a \emph{genetic approach}: problems and practices that motivated mathematical ideas help introduce those ideas. Students will move repeatedly from historical problem to finite construction, computational experiment, visualization, formalization, modeling, and critique.
+Calculus is a way of reasoning about accumulation, change, dynamics,
+and form. This course follows the historical and conceptual development
+of these ideas from problems of measurement, quadrature, and motion to
+differential equations, high-dimensional optimization, and contemporary
+artificial intelligence. Mathematics is studied alongside computation,
+visual culture, modeling, history and sociology of science, and critical
+studies of data and AI.
 
+Rather than treating history or culture as decoration around a fixed
+mathematical sequence, the course takes what Otto Toeplitz called a
+\emph{genetic approach}: problems and practices that motivated
+mathematical ideas help introduce those ideas. Students will move
+repeatedly among concrete problems, finite constructions, computational
+experiments, visualizations, formal mathematics, models, and critical
+interpretation.
+
+The course begins with integration rather than differentiation. This
+order reflects both the historical development of calculus and the
+course's emphasis on measurement and accumulation. Problems of area,
+volume, summation, and infinity provide a route into the integral before
+we turn to motion, tangency, and the derivative. These two traditions
+eventually meet in the Fundamental Theorem of Calculus.
+
+
+% =========================================================
 \section{Guiding Questions}
+% =========================================================
+
 \begin{itemize}[leftmargin=*]
-\item How do finite procedures describe continuous quantities?
+
+\item How can finite procedures be used to describe continuous quantities?
+
+\item How do approximation and limiting processes produce mathematical
+      knowledge?
+
 \item How do we represent and measure change?
+
 \item What can mathematical models reveal, and what do they conceal?
-\item How did calculus become a technology of prediction, optimization, and control?
-\item What happens when people, images, language, and intelligence become mathematical representations?
+
+\item How did calculus become a technology of prediction, optimization,
+      and control?
+
+\item What happens when people, images, language, and intelligence become
+      mathematical representations?
+
 \end{itemize}
 
+
+% =========================================================
 \section{Course Architecture}
-\begin{tabularx}{\textwidth}{@{}p{0.13\textwidth}p{0.31\textwidth}X@{}}\toprule
-\textbf{Unit} & \textbf{Modules} & \textbf{Central movement}\\\midrule
-I. Integration & 1. Measurement, Exhaustion \& Infinity; 2. Integration, Probability \& Data & accumulation, approximation, quantification\\
-II. Differentiation & 3. Motion, Tangency \& the Derivative; 4. Optimization, Networks \& Learning & change, composition, optimization\\
-III. Differential Equations & 5. Dynamics, Prediction \& Simulation; 6. Feedback, Control \& Intelligence & rules of change, simulation, feedback\\
-IV. Higher Dimensions \& PDEs & 7. Surfaces, Gradients \& Representation; 8. Images, Fields \& Generative AI & change across dimensions, space, and time\\\bottomrule
+% =========================================================
+
+The semester is organized into four units, each containing two modules.
+
+\begin{tabularx}{\textwidth}
+{@{}p{0.13\textwidth}p{0.31\textwidth}X@{}}
+\toprule
+
+\textbf{Unit} &
+\textbf{Modules} &
+\textbf{Central Movement}
+\\
+\midrule
+
+I. Integration &
+1. Measurement, Exhaustion \& Infinity;
+2. Integration, Probability \& Data &
+accumulation, approximation, quantification
+\\
+
+II. Differentiation &
+3. Motion, Tangency \& the Derivative;
+4. Optimization, Networks \& Learning &
+change, composition, optimization
+\\
+
+III. Differential Equations &
+5. Dynamics, Prediction \& Simulation;
+6. Feedback, Control \& Intelligence &
+rules of change, simulation, feedback
+\\
+
+IV. Higher Dimensions \& PDEs &
+7. Surfaces, Fields \& Partial Differential Equations;
+8. Images, Representation \& Generative AI &
+change across dimensions, space, and time
+\\
+
+\bottomrule
 \end{tabularx}
 
+
+% =========================================================
 \section{Calculus Colloquium}
-Throughout the semester students will open class with short scholarly presentations extending the current material. Each colloquium contribution consists of a \textbf{three-page LaTeX brief}, \textbf{five slides}, and a \textbf{5--7 minute presentation} followed by discussion. Topics may include an additional reading, historical episode, mathematical problem, visual object, model, computational experiment, or contemporary application. Across successive rounds the emphasis moves from \textbf{explanation} to \textbf{analysis} to \textbf{synthesis}. Selected work will be revised after feedback.
+% =========================================================
 
+Throughout the semester students will open selected classes with short
+scholarly presentations extending the current material. Each colloquium
+contribution consists of a \textbf{three-page LaTeX brief},
+\textbf{five slides}, and a \textbf{5--7 minute presentation} followed
+by discussion.
+
+Topics may include an additional reading, historical episode,
+mathematical problem, visual object, model, computational experiment,
+or contemporary application. Across successive rounds the emphasis
+will move from \textbf{explanation} to \textbf{analysis} to
+\textbf{synthesis}. Selected work will be revised after feedback.
+
+The Colloquium is intended to develop mathematical communication as
+well as mathematical knowledge: students will practice explaining
+technical ideas precisely, constructing mathematical arguments,
+designing effective visual representations, and presenting technical
+work to an interdisciplinary audience.
+
+
+% =========================================================
 \section{Projects}
-\textbf{Project I: Modeling, Measurement \& Representation.} A midsemester investigation combining calculus, data or observation, visualization, and interpretation.\\
-\textbf{Final Project: Calculus in the World.} A sustained computational and critical investigation connecting mathematics to a historical, cultural, scientific, social, or AI-related question, presented at the final symposium.
+% =========================================================
 
+\textbf{Project I: Modeling, Measurement \& Representation.}
+A midsemester investigation combining calculus, data or observation,
+visualization, computation, and interpretation. Students will formulate
+a question, determine what can be measured or represented
+mathematically, construct an analysis, and examine the assumptions
+involved in that representation.
+
+\medskip
+
+\textbf{Final Project: Calculus in the World.}
+A sustained mathematical and computational investigation connecting
+calculus to a historical, cultural, scientific, social, technological,
+or artistic question. Projects will culminate in a written technical
+report and presentation at the final symposium.
+
+
+% =========================================================
 \section{Readings and Seminar}
-Readings will include short primary sources from the history of mathematics and science together with work in history and sociology of science, science and technology studies, visual culture, cybernetics, data studies, and critical AI. Possible authors include Otto Toeplitz, Theodore Porter, Ian Hacking, Lorraine Daston and Peter Galison, Geoffrey Bowker and Susan Leigh Star, Norbert Wiener, N. Katherine Hayles, Lucy Suchman, Ruha Benjamin, Kate Crawford, and Trevor Paglen. A finalized course reader and weekly selections will accompany the next syllabus revision.
+% =========================================================
 
+Calculus has a history. Its concepts emerged from particular problems,
+arguments, instruments, institutions, and disagreements about what
+constitutes mathematical knowledge. We will therefore read mathematics
+alongside texts from the history and sociology of science, science and
+technology studies, visual culture, cybernetics, data studies, and
+critical studies of artificial intelligence.
+
+Historical primary sources will include selections from Archimedes,
+Bonaventura Cavalieri, Isaac Barrow, Gottfried Wilhelm Leibniz,
+Jean le Rond d'Alembert, Leonhard Euler, Daniel Bernoulli, and
+Gaspard Monge. Many of these readings will be drawn from Dirk
+Struik's \emph{A Source Book in Mathematics, 1200--1800}.
+
+Other readings will include selections from Otto Toeplitz,
+Michel Serres, Gilles Deleuze and F\'elix Guattari, Theodore Porter,
+Lorraine Daston and Peter Galison, Norbert Wiener, Andrew Pickering,
+Geoffrey Bowker and Susan Leigh Star, Trevor Paglen, and Kate Crawford,
+together with primary sources from the history of neural networks and
+machine learning.
+
+These texts are not assigned as authorities to be accepted. Students
+will be asked to reconstruct arguments, identify assumptions, compare
+different forms of evidence, and evaluate claims in relation to the
+mathematics we are studying.
+
+
+% =========================================================
 \section{Calendar}
+% =========================================================
+
 \small
-\begin{tabularx}{\textwidth}{@{}p{0.14\textwidth}p{0.18\textwidth}X p{0.19\textwidth}@{}}\toprule
-\textbf{Date} & \textbf{Module} & \textbf{Topic} & \textbf{Colloquium / Project}\\\midrule
-Aug 26 & Opening & What is calculus? Measurement, change, infinity, computation; Jupyter and the genetic approach & Introduce colloquium / LaTeX\\
-Aug 31 & 1 & Measuring the curved with the straight: quadrature & Instructor model\\
-Sep 2 & 1 & Archimedes and exhaustion & Colloquium\\
-Sep 7 & --- & \textbf{Labor Day --- no class} & ---\\
-Sep 9 & 1 & Sequences, finite sums, convergence, computation & Colloquium\\
-Sep 14 & 1 & Cavalieri, indivisibles, infinity, continuum & Colloquium\\
-Sep 16 & 1 & Riemann sums, sampling, pixels, numerical approximation & Colloquium\\
-Sep 21 & 2 & The definite integral & Colloquium\\
-Sep 23 & 2 & Accumulation and the Fundamental Theorem & Colloquium\\
-Sep 28 & 2 & Probability density, distributions, expectation & Colloquium\\
-Sep 30 & 2 & Lorenz curves, inequality, Gini coefficient & Colloquium\\
-Oct 5 & 2 & Supply, demand, consumer surplus & Colloquium\\
-Oct 7 & 2 & Integration studio: data, visualization, critique & Project I workshop\\
-Oct 12 & 3 & Motion, secants, finite differences, instantaneous change & Colloquium\\
-Oct 14 & 3 & Fermat, Newton, Leibniz and tangent problems & Colloquium\\
-Oct 19 & 3 & Derivative as limit: numerical, graphical, analytic & Colloquium\\
-Oct 21 & 3 & Differentiation, composition, chain rule & Colloquium\\
-Oct 26 & 3 & Motion studies, photography, curves, local linearity & Project I presentations\\
-Oct 28 & 4 & Maxima, minima, objective functions & Project I presentations\\
-Nov 2 & 4 & Critical points, curvature, optimization & Colloquium\\
-Nov 4 & 4 & Newton's method: tangency as algorithm & Colloquium\\
-Nov 9 & 4 & Regression, error, loss functions & Colloquium\\
-Nov 11 & 4 & Neural networks, chain rule, backpropagation & Colloquium\\
-Nov 16 & 5 & From rates to differential equations & Colloquium\\
-Nov 18 & 5 & Slope fields, Euler's method, simulation & Colloquium\\
-Nov 23 & 5 & Growth, epidemics, populations, prediction & Colloquium\\
-Nov 25 & --- & \textbf{Thanksgiving --- no class} & ---\\
-Nov 30 & 6 & Equilibrium, feedback, cybernetics, machine intelligence & Colloquium\\
-Dec 2 & 6 & Oscillation, recurrence, computational systems & Colloquium + final workshop\\
-Dec 7 & 7 & Surfaces, contours, partial derivatives, gradients & Colloquium\\
-Dec 9 & 7--8 & Loss landscapes, embeddings, representation & Colloquium\\
-Dec 14 & 8 & Images, convolution, diffusion, PDEs, generative AI & Final Project Symposium\\\bottomrule
+
+\begin{tabularx}{\textwidth}
+{@{}p{0.12\textwidth}p{0.15\textwidth}X p{0.19\textwidth}@{}}
+\toprule
+
+\textbf{Date} &
+\textbf{Module} &
+\textbf{Topic} &
+\textbf{Colloquium / Project}
+\\
+\midrule
+
+Aug 26 &
+Opening &
+What is calculus? Measurement, approximation, infinity, computation,
+and the genetic approach &
+Course introduction
+\\
+
+Aug 31 &
+1 &
+Patterns and accumulation: triangular numbers, finite sums,
+approximation, and area &
+Instructor model
+\\
+
+Sep 2 &
+1 &
+Archimedes, geometric series, and the method of exhaustion &
+Colloquium begins
+\\
+
+Sep 7 &
+--- &
+\textbf{Labor Day --- no class} &
+---
+\\
+
+Sep 9 &
+1 &
+Finite and infinite sums, sequences, convergence, computational
+experiments &
+Colloquium
+\\
+
+Sep 14 &
+1 &
+Cavalieri, indivisibles, infinity, and the continuum &
+Colloquium
+\\
+
+Sep 16 &
+1 &
+Partitioning, Riemann sums, sampling, pixels, and numerical
+approximation &
+Colloquium
+\\
+
+Sep 21 &
+2 &
+The definite integral and accumulation functions &
+Colloquium
+\\
+
+Sep 23 &
+2 &
+Barrow and the Fundamental Theorem of Calculus &
+Colloquium
+\\
+
+Sep 28 &
+2 &
+Probability density, distributions, and expectation &
+Colloquium
+\\
+
+Sep 30 &
+2 &
+Lorenz curves, inequality, and the Gini coefficient &
+Colloquium
+\\
+
+Oct 5 &
+2 &
+Integration in economics: accumulation, supply, demand,
+and consumer surplus &
+Colloquium
+\\
+
+Oct 7 &
+2 &
+Integration studio: data, visualization, modeling, and critique &
+Project I workshop
+\\
+
+Oct 12 &
+3 &
+Motion, secants, finite differences, and instantaneous change &
+Colloquium
+\\
+
+Oct 14 &
+3 &
+Leibniz, differential notation, and rules of differentiation &
+Colloquium
+\\
+
+Oct 19 &
+3 &
+The derivative as limit: numerical, graphical, and analytic views &
+Colloquium
+\\
+
+Oct 21 &
+3 &
+Products, quotients, composition, and the chain rule &
+Colloquium
+\\
+
+Oct 26 &
+3 &
+Motion studies, photography, curves, and local linearity &
+Project I presentations
+\\
+
+Oct 28 &
+4 &
+Critical points, maxima, minima, and objective functions &
+Project I presentations
+\\
+
+Nov 2 &
+4 &
+Optimization, curvature, and objective landscapes &
+Colloquium
+\\
+
+Nov 4 &
+4 &
+Newton's method: tangency as algorithm &
+Colloquium
+\\
+
+Nov 9 &
+4 &
+Regression, error, loss, and the perceptron &
+Colloquium
+\\
+
+Nov 11 &
+4 &
+Composition, the chain rule, neural networks, and backpropagation &
+Colloquium
+\\
+
+Nov 16 &
+5 &
+From rates to differential equations: slope fields and numerical
+solutions &
+Colloquium
+\\
+
+Nov 18 &
+5 &
+Euler's method, simulation, prediction, and model sensitivity &
+Colloquium
+\\
+
+Nov 23 &
+5 &
+Growth, epidemics, populations, and nonlinear models &
+Colloquium
+\\
+
+Nov 25 &
+--- &
+\textbf{Thanksgiving --- no class} &
+---
+\\
+
+Nov 30 &
+6 &
+Equilibrium, stability, feedback, cybernetics, and machine
+intelligence &
+Colloquium
+\\
+
+Dec 2 &
+7 &
+From ordinary to partial differential equations: oscillation,
+waves, and the vibrating string &
+Colloquium
+\\
+
+Dec 7 &
+7 &
+Surfaces, contours, partial derivatives, gradients, and fields &
+Colloquium
+\\
+
+Dec 9 &
+8 &
+Vectors, embeddings, images, and machine representation &
+Final project workshop
+\\
+
+Dec 14 &
+8 &
+Diffusion, fields, generative models, and representation &
+Final Project Symposium
+\\
+
+\bottomrule
 \end{tabularx}
+
 \normalsize
 
-\section{Working Practices}
-Students will use Jupyter notebooks for computational experiments and LaTeX for technical writing. AI tools may be used as objects of study and, when explicitly permitted, as tools for exploration, explanation, coding, and critique. Course assignments will emphasize verification, documentation of tool use, and responsibility for all submitted mathematical claims and writing.
 
-\section{Assessment --- Draft}
-The exact weighting will be finalized with the assignment sequence. The course will combine notebook studios and problem work, Calculus Colloquium briefs/presentations and revisions, Project I, a final project/symposium, and engaged participation in seminar discussion and peer feedback.
+% =========================================================
+\section{Working Practices}
+% =========================================================
+
+Mathematics in this course will be developed through several different
+forms of work: calculation by hand, drawing and visualization,
+computational experimentation, mathematical argument, technical writing,
+historical reading, and discussion.
+
+Students will use computational tools to investigate patterns, test
+conjectures, visualize mathematical objects, simulate models, and work
+with data. Depending on the problem, appropriate tools may include
+Jupyter and Python, spreadsheets, Desmos, GeoGebra, computer algebra
+systems, or other mathematical software. Students are expected to
+document computational experiments sufficiently for another person to
+understand and reproduce them.
+
+Students will also learn to use \LaTeX{} for mathematical and technical
+writing. Templates and examples will be provided, and expectations will
+develop over the course of the semester.
+
+
+% =========================================================
+\section{Generative Artificial Intelligence}
+% =========================================================
+
+Generative AI is part of the subject matter of this course, but it is
+not initially permitted as a tool for completing coursework.
+
+During the semester we will develop the mathematical ideas needed to
+understand neural networks, loss functions, gradient-based learning,
+backpropagation, representation, and related computational systems.
+We will also examine these technologies historically and critically.
+
+Later in the semester, the class will reconsider when and how
+generative AI systems may appropriately be used in coursework. Any
+change in this policy will be announced explicitly. Until then,
+generative AI systems should not be used to generate mathematical
+solutions, explanations, code, reading responses, or written work
+submitted for the course.
+
+The governing principle is that we will work toward understanding these
+systems before relying on them as mathematical tools.
+
+
+% =========================================================
+\section{Assessment}
+% =========================================================
+
+Assessment in this course emphasizes sustained mathematical work,
+experimentation, communication, revision, and synthesis.
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\toprule
+\textbf{Course Work} & \textbf{Weight} \\
+\midrule
+
+Problem Sets \& Computational Work & 30\% \\
+
+Calculus Colloquium & 20\% \\
+
+Project I: Modeling, Measurement \& Representation & 20\% \\
+
+Final Project \& Symposium & 25\% \\
+
+Participation, Discussion \& Peer Feedback & 5\% \\
+
+\bottomrule
+\end{tabularx}
+
+\medskip
+
+Problem sets will combine mathematical problems, computational
+experiments, visual reasoning, and occasional short responses to
+readings. Correct answers matter, but so do explanations, representations,
+documentation, and the ability to distinguish computational evidence
+from mathematical argument.
+
+
+% =========================================================
+\section{Instructor}
+% =========================================================
+
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+
+\textbf{Instructor:} & \InstructorName \\
+
+\textbf{Email:} & \InstructorEmail \\
+
+\textbf{Office Hours:} & \OfficeHours \\
+
+\end{tabularx}
+
+\clearpage
+\input{readings}
 
 \end{document}

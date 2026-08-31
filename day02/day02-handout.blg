@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'day02-handout.blg'
+[50] biber-darwin:315> INFO - === Sun Aug 30, 2026, 21:12:12
+[80] Biber.pm:371> INFO - Reading 'day02-handout.bcf'
+[175] Utils.pm:193> WARN - No data sources defined!

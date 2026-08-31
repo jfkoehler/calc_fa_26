@@ -1,0 +1,291 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LMTH 2040 — Calculus: A Multidisciplinary Approach
+% Homework 01
+% Fall 2026
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+
+% Adjust path as needed
+\usepackage{../langcalc}
+
+\begin{document}
+
+\courseheader
+    {Homework 01: Patterns and Accumulation}
+    {LMTH 2040 --- Calculus: A Multidisciplinary Approach}
+    {Fall 2026}
+    {Due Monday, August 31}
+
+\begin{keyidea}
+This assignment asks you to investigate patterns before being given
+formulas for them. Draw pictures, calculate examples, experiment with
+technology, make conjectures, and explain why you think your conclusions
+are true.
+\end{keyidea}
+
+\section*{Problem 1 \quad Triangular Numbers}
+
+Consider the following arrangements of dots:
+
+\begin{center}
+\begin{tabular}{cccc}
+Stage 1 & Stage 2 & Stage 3 & Stage 4 \\[6pt]
+
+$\bullet$
+&
+\begin{tabular}{c}
+$\bullet$\\[-2pt]
+$\bullet\ \bullet$
+\end{tabular}
+&
+\begin{tabular}{c}
+$\bullet$\\[-2pt]
+$\bullet\ \bullet$\\[-2pt]
+$\bullet\ \bullet\ \bullet$
+\end{tabular}
+&
+\begin{tabular}{c}
+$\bullet$\\[-2pt]
+$\bullet\ \bullet$\\[-2pt]
+$\bullet\ \bullet\ \bullet$\\[-2pt]
+$\bullet\ \bullet\ \bullet\ \bullet$
+\end{tabular}
+\end{tabular}
+\end{center}
+
+The number of dots in the \(n\)th arrangement is called the
+\(n\)th \emph{triangular number}, which we will denote by \(T_n\).
+
+\begin{enumerate}[label=\textbf{\alph*.}, leftmargin=2em]
+
+\item
+Draw the next three stages and determine \(T_5\), \(T_6\), and \(T_7\).
+
+\item
+Find a way to arrange, duplicate, reflect, cut, or otherwise transform
+one of these pictures so that you can determine \(T_n\) without adding
+
+\[
+1+2+3+\cdots+n
+\]
+
+one term at a time.
+
+Include a picture of your construction.
+
+\item
+Use your construction to find a formula for \(T_n\).
+
+Explain why your formula works for \emph{every} positive integer \(n\),
+not only for the examples you have drawn.
+
+\item
+Now consider the ratio
+
+\[
+\frac{T_n}{n^2}.
+\]
+
+Calculate this ratio for several values of \(n\).
+
+What seems to happen as \(n\) becomes very large?
+
+Make a conjecture and then use your formula from part (c) to explain
+whether your conjecture must be true.
+
+\end{enumerate}
+
+\begin{reflection}
+\textbf{Computational Experiment.}
+
+Use a computational tool of your choice to extend your investigation
+beyond what would be convenient to calculate by hand.
+
+You might use Python or Jupyter, a spreadsheet, Desmos, GeoGebra,
+Mathematica, a calculator, or another computational tool.
+
+Investigate
+
+\[
+\frac{T_n}{n^2}
+\]
+
+for increasingly large values of \(n\). You might construct a table,
+make a graph, write a short program, or develop another useful
+representation.
+
+Include enough information that someone else could reproduce your
+experiment.
+
+Briefly explain:
+
+\begin{enumerate}[label=\arabic*., leftmargin=2em]
+    \item what tool you used and what you asked it to do;
+    \item what pattern you observed; and
+    \item what the computation shows---and what it does \emph{not}
+    establish by itself.
+\end{enumerate}
+\end{reflection}
+
+
+% =========================================================
+\section*{Problem 2 \quad A Growing Shape}
+
+Consider the following pattern made from unit squares.
+
+\begin{center}
+\renewcommand{\arraystretch}{0.8}
+
+\begin{tabular}{ccc}
+
+\textbf{Stage 1}
+&
+\textbf{Stage 2}
+&
+\textbf{Stage 3}
+\\[10pt]
+
+\(\blacksquare\)
+
+&
+
+\begin{tabular}{c}
+\(\phantom{\blacksquare}\blacksquare\phantom{\blacksquare}\)\\
+\(\blacksquare\blacksquare\blacksquare\)\\
+\(\phantom{\blacksquare}\blacksquare\phantom{\blacksquare}\)
+\end{tabular}
+
+&
+
+\begin{tabular}{c}
+\(\phantom{\blacksquare\blacksquare}\blacksquare
+  \phantom{\blacksquare\blacksquare}\)\\
+\(\phantom{\blacksquare}
+  \blacksquare\blacksquare\blacksquare
+  \phantom{\blacksquare}\)\\
+\(\blacksquare\blacksquare\blacksquare
+  \blacksquare\blacksquare\)\\
+\(\phantom{\blacksquare}
+  \blacksquare\blacksquare\blacksquare
+  \phantom{\blacksquare}\)\\
+\(\phantom{\blacksquare\blacksquare}\blacksquare
+  \phantom{\blacksquare\blacksquare}\)
+\end{tabular}
+
+\end{tabular}
+\end{center}
+
+Let \(S_n\) denote the number of unit squares in Stage \(n\).
+
+\begin{enumerate}[label=\textbf{\alph*.}, leftmargin=2em]
+
+\item
+Draw Stages 4 and 5.
+
+Determine
+
+\[
+S_1,\quad S_2,\quad S_3,\quad S_4,\quad S_5.
+\]
+
+\item
+Instead of looking only at the total number of squares, investigate
+how the figure \emph{grows}.
+
+How many new squares are added in passing from one stage to the next?
+
+Describe the pattern you find.
+
+\item
+Find a formula for \(S_n\).
+
+Your explanation should make use of the geometry of the figure rather
+than simply presenting an algebraic formula.
+
+\item
+Compare the sequences \(T_n\) and \(S_n\).
+
+What is similar about the way they grow?
+
+What is different?
+
+Can one of the sequences help you understand the other?
+
+\end{enumerate}
+
+\begin{reflection}
+\textbf{Computational Experiment.}
+
+Use a computational tool of your choice to investigate the pattern at
+scales that would be inconvenient to draw by hand.
+
+Your goal is \emph{not} simply to generate more terms. Use computation
+to discover something about the pattern.
+
+For example, you might investigate:
+
+\begin{itemize}[leftmargin=2em]
+    \item the total number of squares \(S_n\);
+    \item the number of new squares added at each stage;
+    \item ratios involving \(S_n\);
+    \item comparisons between \(S_n\), \(T_n\), \(n\), and \(n^2\);
+    \item how quickly different measurements grow;
+    \item or another pattern that you notice.
+\end{itemize}
+
+Present one computational observation that you find mathematically
+interesting.
+
+State a conjecture suggested by your experiment. Then explain what
+additional mathematical reasoning would be necessary to establish
+that conjecture.
+\end{reflection}
+
+
+% =========================================================
+% =========================================================
+\section*{Reading \quad Otto Toeplitz}
+
+Read the \textbf{Preface to the English Edition} and the opening
+section of Part I at least through the second paragraph on page 6 of \textbf{``The Nature of the Infinite Process,''}
+from Otto Toeplitz, \emph{The Calculus: A Genetic Approach}.
+
+\begin{historicalnote}
+Toeplitz describes this book as an attempt to develop a
+\emph{genetic approach} to calculus. As you read, pay attention to
+what he thinks is unsatisfactory about the usual presentation of
+mathematics and what he proposes doing differently.
+\end{historicalnote}
+
+\subsection*{Response}
+
+Write approximately one paragraph responding to the following:
+
+\begin{quote}
+What does Toeplitz mean by a ``genetic approach'' to calculus?
+
+Identify one claim he makes about how mathematics should be learned
+or presented. Explain the claim in your own words and then respond
+to it: what do you find convincing, questionable, or unresolved?
+
+Where useful, draw on your experience with one of the mathematical
+problems in this assignment.
+\end{quote}
+
+
+% =========================================================
+\section*{Submission}
+
+Submit a single PDF containing your mathematical work, figures,
+computational experiment, and reading response.
+
+Your solutions should communicate your reasoning, not only your final
+answers. Include diagrams when they are part of your argument.
+
+If you use computational tools, briefly
+identify the tool and describe how you used it. You are responsible
+for understanding and explaining any mathematics, code, or claims
+included in your submission.
+
+\end{document}

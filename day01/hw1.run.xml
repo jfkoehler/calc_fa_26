@@ -44,14 +44,13 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>syllabus.bcf</file>
+      <file>hw1.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>syllabus.bbl</file>
+      <file>hw1.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
-      <file>blx-unicode.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
       <file>standard.bbx</file>
@@ -65,22 +64,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>syllabus</infile>
+      <infile>hw1</infile>
     </cmdline>
     <input>
-      <file>syllabus.bcf</file>
+      <file>hw1.bcf</file>
     </input>
     <output>
-      <file>syllabus.bbl</file>
+      <file>hw1.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>syllabus.bbl</file>
+      <file>hw1.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>syllabus.bcf</file>
-    </requires>
-    <requires type="editable">
-      <file>references.bib</file>
+      <file>hw1.bcf</file>
     </requires>
   </external>
 </requests>
